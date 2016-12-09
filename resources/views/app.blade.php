@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Laravel City</title>
+    <title>Forum City</title>
     <link rel="stylesheet" href="{{ URL::asset('/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/style.css ')}}">
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Laravel City</a>
+                <a class="navbar-brand" href="/">Forum City</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

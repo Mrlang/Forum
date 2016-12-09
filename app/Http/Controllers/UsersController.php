@@ -35,7 +35,7 @@ class UsersController extends Controller
      */
     public function store(Requests\UserRegisterRequest $request)
     {
-        $data = ['confirm_code' => str_random(48),'avatar'=>'/images/default-image.png'];
+        $data = ['confirm_code' => str_random(48),'avatar'=>'/images/default-image.jpg'];
         $user = User::create(array_merge($request->all(),$data));
         User::create();
 //        $subject = 'Confirm Your Email';
