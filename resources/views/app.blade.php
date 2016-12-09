@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Laravel City</title>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/font-awesome.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/jquery.Jcrop.css">
+    <link rel="stylesheet" href="{{ URL::asset('/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/css/style.css ')}}">
+    <link rel="stylesheet" href="{{ URL::asset('/css/jquery.Jcrop.css') }}">
 
-    <script src="/js/jquery-2.1.4.min.js"></script>
-    <script src="/js/jquery.Jcrop.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.form.js"></script>
+    <script src="{{ URL::asset('/js/jquery-2.1.4.min.js') }}"></script>
+    <script src="{{ URL::asset('/js/jquery.Jcrop.min.js') }}"></script>
+    <script src="{{ URL::asset('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('/js/jquery.form.js') }}"></script>
     {{--<script src="/js/vue.min.js"></script>--}}
     {{--<script src="/js/vue-resource.min.js"></script>--}}
 
