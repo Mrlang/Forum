@@ -48,7 +48,7 @@
                     </li>
                     <li><img src="{{ Auth::user()->avatar }}" alt="" class="img-circle" width="50" height="50"></li>
                 @else
-                    <li><a href="/user/login/">登 录</a></li>
+                    <li><a href="{{ URL::asset('/user/login/') }}">登 录</a></li>
                     <li><a href="/user/register">注  册</a></li>
                 @endif
                 </ul>
