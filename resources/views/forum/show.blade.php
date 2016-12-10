@@ -66,6 +66,7 @@
     </div>
 </div>
 <script>
+    @if(Auth::check())
     Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
     new Vue({
         el:'#post',
@@ -99,6 +100,7 @@
             }
         },
     })
+    @endif
 </script>
 
 @stop
