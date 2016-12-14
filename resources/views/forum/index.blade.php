@@ -3,11 +3,10 @@
     <!-- 大横幅 -->
     <div class="jumbotron">
         <div class="container">
-            <h1>
-                Welcome to LaravelCity~
+            <h3>
+                王良(2014211547),龙宪永(2014211562),陈熙(2014211560)
                 <a class="btn btn-lg btn-primary pull-right" href="/discussions/create" role="button">发布新帖 »</a>
-            </h1>
-            <p>王良(2014211547),龙宪永(2014211562),陈熙(2014211560)</p>
+            </h3>
         </div>
     </div>
     <div class="container">
@@ -27,7 +26,5 @@
             </div>
         </div>
     </div>
-    <script>
-        alert("王良(2014211547),龙宪永(2014211562),陈熙(2014211560)");
-    </script>
+
 @stop
