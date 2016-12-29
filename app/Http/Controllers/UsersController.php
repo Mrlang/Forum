@@ -37,11 +37,14 @@ class UsersController extends Controller
     {
         $data = ['confirm_code' => str_random(48),'avatar'=>'/images/default-image.jpg'];
         $user = User::create(array_merge($request->all(),$data));
-        User::create();
-//        $subject = 'Confirm Your Email';
-//        $view = 'email.register';
-//        $this->sendTo($user,$subject,$view,$data);
-        return redirect('/');
+        //User::create();
+        /*$subject = 'Confirm Your Email';
+        $view = 'email.register';
+        $this->sendTo($user,$subject,$view,$data);
+        */
+        if(\Auth::attempt(['email'=>$request->get('email'), 'password'=>$request->get('password'), 'is_confirmed'=>1]))
+            return redirect('/');
+
     }
 
     public function confirmEmail($confirm_code){
